@@ -1,0 +1,68 @@
+Crea un dashboard analítico para una plataforma tipo Apple Music. 
+Usa React, TailwindCSS y componentes de shadcn/ui. 
+Incluye un menú lateral (sidebar) con iconos y un navbar superior. 
+El diseño debe ser moderno, limpio, responsivo y con tarjetas visuales (cards) con sombras suaves y bordes redondeados.
+
+IMPORTANTE:
+- Todas las gráficas deben usar colores atractivos y armoniosos.
+- Usa colores modernos como degradados azules, verdes o púrpuras para las barras.
+- Los datos pueden ser de ejemplo, pero deben respetar la estructura de cada consulta descrita a continuación.
+
+------------------------------------------
+SECCIÓN 1 — Top Artistas por Regalías (Últimos 30 días)
+------------------------------------------
+Representa los resultados de la consulta con:
+- Gráfica de barras (bar chart) donde cada barra represente a un artista.
+  Eje X: nombre del artista. 
+  Eje Y: totalSeconds.
+  Las barras deben ser de colores llamativos y variados.
+- Tabla con columnas: Artista, Segundos Totales Reproducidos, Número de Reproducciones.
+- Una tarjeta KPI mostrando: “Total de Streams en los últimos 30 días”.
+
+------------------------------------------
+SECCIÓN 2 — Top Canciones de Guatemala (Últimos 7 días)
+------------------------------------------
+Representa estos datos con:
+- Lista ordenada de las 10 canciones más reproducidas en Guatemala.
+- Gráfica de barras horizontal con colores vibrantes:
+  Eje Y: título de la canción.
+  Eje X: número de reproducciones.
+- Tabla con columnas: Título, Artista, Reproducciones, Oyentes Únicos.
+- Un pequeño KPI con “Top 10 GT”.
+
+------------------------------------------
+SECCIÓN 3 — Usuarios Premium Zombis (sin actividad en 30 días)
+------------------------------------------
+Visualiza la información con:
+- Gráfica de dona (donut chart) para mostrar proporción de Premium activos vs Premium zombis.
+- Tabla con columnas: Usuario, Email, País, Última Actividad.
+- Tarjeta KPI con el número total de usuarios “Premium Zombis”.
+- Usa colores cálidos para el segmento de inactivos.
+
+------------------------------------------
+SECCIÓN 4 — Demografía del Reggaetón (por edades)
+------------------------------------------
+Representación visual:
+- Gráfica de barras por rangos de edad: 0–15, 15–20, 20–30, 30–40, 40–50, 50–100.
+- Cada barra debe tener un color distinto dentro de una paleta atractiva.
+- Tarjeta con explicación breve: “Distribución por edades de oyentes de Reggaeton”.
+
+------------------------------------------
+SECCIÓN 5 — Heavy Listeners de Ricardo Arjona
+------------------------------------------
+Mostrar:
+- Tabla con los 5 usuarios que han escuchado más canciones distintas.
+  Columnas: Usuario, País, Suscripción, Cantidad de Canciones Distintas.
+- Tarjeta KPI: “Top Heavy Listener Count”.
+- Mini gráfica de barras con colores fuertes para “distinctSongsCount” por usuario.
+
+------------------------------------------
+ESTRUCTURA GENERAL DEL DASHBOARD
+------------------------------------------
+- Diseño con 2 o 3 columnas según tamaño de pantalla.
+- Sidebar con iconos de lucide-react.
+- Navbar con menú de usuario y buscador.
+- Cards con sombra suave, bordes redondeados, padding amplio.
+- Agregar filtros UI (solo visuales): selector de rango de fechas y selector de país.
+- Todo debe ser completamente responsivo.
+- Usa una estética moderna tipo dashboards de analítica empresarial.

@@ -12,7 +12,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 const { faker } = require('@faker-js/faker');
 
 // Configuración
-const URI = 'mongodb://localhost:27017';
+const URI = 'mongodb://admin:password123@localhost:27017/apple_music?authSource=admin';
 const DB_NAME = 'apple_music_db';
 
 // Datos Maestros (Hardcoded para asegurar consistencia en el examen)
